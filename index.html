@@ -2,107 +2,99 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>MonTec | Soluções em Tecnologia</title>
+<title>MonTec Tecnologia | Montagem, Manutenção e Soluções Eletrônicas</title>
 
-<meta name="description" content="MonTec - Montagem, manutenção, instalação e atualização de equipamentos eletrônicos e tecnologia.">
+<meta name="description" content="MonTec Tecnologia especializada em montagem, manutenção, instalação e atualização de equipamentos eletrônicos para empresas.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #f4f6f8;
-    color: #333;
+    background-color: #0b0b0b;
+    color: #eaeaea;
 }
 
 header {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('https://images.unsplash.com/photo-1581092334494-7c3c2c1f0b59');
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+    url('https://images.unsplash.com/photo-1518770660439-4636190af475');
     background-size: cover;
     background-position: center;
-    color: white;
     text-align: center;
-    padding: 100px 20px;
+    padding: 90px 20px;
+}
+
+header img {
+    width: 200px;
+    margin-bottom: 25px;
 }
 
 header h1 {
-    font-size: 48px;
-    color: #00d4ff;
+    color: #ff6a00;
+    font-size: 44px;
+    margin-bottom: 15px;
 }
 
 header p {
-    font-size: 20px;
-    max-width: 700px;
+    max-width: 900px;
     margin: auto;
+    font-size: 20px;
 }
 
 .btn {
     display: inline-block;
-    margin: 15px;
-    padding: 14px 30px;
-    background: #00d4ff;
+    margin: 25px 10px 0;
+    padding: 15px 35px;
+    background: #ff6a00;
     color: #000;
     text-decoration: none;
-    border-radius: 6px;
     font-weight: bold;
+    border-radius: 6px;
 }
 
 section {
-    padding: 60px 20px;
+    padding: 80px 20px;
     max-width: 1200px;
     margin: auto;
 }
 
 h2 {
-    color: #0b3c5d;
+    color: #ff6a00;
+    font-size: 36px;
     text-align: center;
     margin-bottom: 40px;
-    font-size: 32px;
+}
+
+.block {
+    background: #111;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 20px rgba(255,106,0,0.15);
 }
 
 .services {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
 }
 
-.card {
-    background: white;
+.service {
+    background: #161616;
+    padding: 30px;
     border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.card div {
-    padding: 20px;
-}
-
-.card h3 {
-    color: #0077b6;
-}
-
-.highlight {
-    background: #0b3c5d;
-    color: white;
-    text-align: center;
-}
-
-.highlight span {
-    color: #00d4ff;
-    font-weight: bold;
+.service h3 {
+    color: #ff6a00;
+    margin-bottom: 15px;
 }
 
 footer {
     background: #000;
-    color: white;
     text-align: center;
-    padding: 25px;
+    padding: 35px 20px;
+    font-size: 15px;
 }
 </style>
 </head>
@@ -110,77 +102,98 @@ footer {
 <body>
 
 <header>
-    <h1>MonTec</h1>
-    <p>Montagem, manutenção e soluções completas em tecnologia para empresas e profissionais.</p>
+    <img src="./logo-montec.png" alt="Logo oficial da MonTec Tecnologia">
+    <h1>MonTec Tecnologia</h1>
+    <p>
+        Empresa especializada em montagem, manutenção, instalação e atualização de equipamentos
+        eletrônicos, oferecendo soluções técnicas com responsabilidade, organização e compromisso
+        com resultados para empresas.
+    </p>
 
-    <a href="#servicos" class="btn">Nossos Serviços</a>
-    <a href="#empresa" class="btn">Sobre a Empresa</a>
-    <a href="#contato" class="btn">Contato</a>
+    <a class="btn" href="https://wa.me/5541995579044" target="_blank">Atendimento WhatsApp</a>
 </header>
 
-<section id="servicos">
-    <h2>Nossos Serviços</h2>
+<section>
+<h2>Quem Somos</h2>
+<div class="block">
+<p>
+A <strong>MonTec Tecnologia</strong> atua no segmento de tecnologia e eletrônica,
+prestando serviços técnicos especializados para empresas que buscam qualidade,
+confiabilidade e padronização em seus processos.
+</p>
 
-    <div class="services">
+<p>
+Nosso trabalho é voltado à montagem completa de equipamentos, manutenção preventiva
+e corretiva, instalação técnica e atualização de placas eletrônicas, sempre seguindo
+boas práticas, organização e critérios técnicos rigorosos.
+</p>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1581091870627-3f94c3e7fe32">
-            <div>
-                <h3>Montagem de Equipamentos</h3>
-                <p>Montagem completa de equipamentos eletrônicos com padrão técnico e organização.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc">
-            <div>
-                <h3>Manutenção Técnica</h3>
-                <p>Manutenção preventiva e corretiva garantindo funcionamento e segurança.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
-            <div>
-                <h3>Atualização de Placas</h3>
-                <p>Atualização, substituição e ajustes em placas e módulos eletrônicos.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e">
-            <div>
-                <h3>Instalação Técnica</h3>
-                <p>Instalação organizada e segura de equipamentos tecnológicos.</p>
-            </div>
-        </div>
-
-    </div>
+<p>
+Atendemos com foco empresarial, entendendo que tecnologia exige responsabilidade,
+documentação, rastreabilidade e comprometimento com prazos e resultados.
+</p>
+</div>
 </section>
 
-<section id="empresa" class="highlight">
-    <h2>Quem Somos</h2>
-    <p>
-        A <span>MonTec</span> é uma empresa focada em soluções tecnológicas,
-        atuando com montagem, manutenção e instalação de equipamentos eletrônicos,
-        sempre com qualidade, compromisso e eficiência operacional.
-    </p>
+<section>
+<h2>Nossos Serviços</h2>
+
+<div class="services">
+
+<div class="service">
+<h3>Montagem de Equipamentos Eletrônicos</h3>
+<p>
+Realizamos a montagem completa de equipamentos eletrônicos, desde a organização
+dos componentes até a finalização do produto, respeitando normas técnicas,
+padronização e qualidade operacional.
+</p>
+</div>
+
+<div class="service">
+<h3>Manutenção Técnica Preventiva e Corretiva</h3>
+<p>
+Atuamos na manutenção preventiva para evitar falhas e na manutenção corretiva
+para restaurar o funcionamento dos equipamentos, garantindo segurança e desempenho.
+</p>
+</div>
+
+<div class="service">
+<h3>Atualização e Substituição de Placas</h3>
+<p>
+Efetuamos atualização, substituição e ajustes técnicos em placas eletrônicas,
+módulos e sistemas, assegurando compatibilidade e eficiência.
+</p>
+</div>
+
+<div class="service">
+<h3>Instalação Técnica de Equipamentos</h3>
+<p>
+Instalamos equipamentos tecnológicos de forma organizada, segura e documentada,
+garantindo correto funcionamento e confiabilidade.
+</p>
+</div>
+
+</div>
 </section>
 
-<section id="contato">
-    <h2>Contato</h2>
-    <p style="text-align:center;">
-        Entre em contato conosco e solicite um atendimento profissional.
-    </p>
-
-    <p style="text-align:center;">
-        📧 Email: contato@montec.com.br <br>
-        📞 Telefone / WhatsApp: (em breve)
-    </p>
+<section>
+<h2>Informações da Empresa</h2>
+<div class="block">
+<p>📞 <strong>WhatsApp:</strong> (41) 99557-9044</p>
+<p>📧 <strong>E-mail:</strong> montectecnologias@gmail.com</p>
+<p>🧾 <strong>CNPJ:</strong> 61.366.918/0001-34</p>
+<p>
+Essas informações são públicas e fazem parte da transparência e responsabilidade
+da MonTec Tecnologia perante clientes e parceiros.
+</p>
+</div>
 </section>
 
 <footer>
-    <p>© 2025 MonTec - Soluções em Tecnologia</p>
+<p>
+© 2025 MonTec Tecnologia<br>
+Montagem • Manutenção • Soluções Eletrônicas
+</p>
 </footer>
 
 </body>
