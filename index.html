@@ -3,109 +3,162 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MonTec Tecnologia | Soluções em Eletrônica</title>
+
+<title>MonTec Tecnologia | Eletrônica, Montagem e Soluções Técnicas</title>
+
+<meta name="description" content="MonTec Tecnologia – Especialistas em montagem, manutenção, instalação e atualização de equipamentos eletrônicos. Atendimento técnico profissional para empresas.">
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #0b0b0b;
-    color: #ffffff;
+:root{
+    --laranja:#ff6a00;
+    --preto:#0b0b0b;
+    --cinza:#1a1a1a;
+    --cinza-claro:#f2f2f2;
 }
 
-header {
-    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:var(--preto);
+    color:#ffffff;
+    line-height:1.6;
+}
+
+/* ===== HEADER ===== */
+header{
+    background:linear-gradient(rgba(0,0,0,.85),rgba(0,0,0,.85)),
     url("https://images.unsplash.com/photo-1518770660439-4636190af475");
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding: 80px 20px;
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+    padding:90px 20px;
 }
 
-header img {
-    width: 160px;
-    margin-bottom: 20px;
+.logo-box{
+    display:inline-block;
+    background:var(--cinza-claro);
+    padding:20px 28px;
+    border-radius:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,.6);
+    margin-bottom:25px;
 }
 
-header h1 {
-    color: #ff6a00;
-    font-size: 48px;
-    margin-bottom: 10px;
+.logo-box img{
+    width:160px;
+    display:block;
 }
 
-header p {
-    max-width: 900px;
-    margin: auto;
-    font-size: 18px;
-    line-height: 1.6;
+header h1{
+    color:var(--laranja);
+    font-size:48px;
+    margin:15px 0 10px;
+    letter-spacing:2px;
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 15px 30px;
-    background-color: #ff6a00;
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
+header p{
+    max-width:900px;
+    margin:0 auto;
+    font-size:18px;
 }
 
-section {
-    padding: 70px 20px;
-    max-width: 1200px;
-    margin: auto;
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:16px 34px;
+    background:var(--laranja);
+    color:#000;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:8px;
+    transition:.3s;
 }
 
-section h2 {
-    text-align: center;
-    color: #ff6a00;
-    font-size: 36px;
-    margin-bottom: 50px;
+.btn:hover{
+    background:#ff8126;
 }
 
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
+/* ===== SEÇÕES ===== */
+section{
+    padding:80px 20px;
+    max-width:1200px;
+    margin:auto;
 }
 
-.card {
-    background-color: #151515;
-    padding: 30px;
-    border-radius: 10px;
-    border-left: 5px solid #ff6a00;
+section h2{
+    text-align:center;
+    font-size:36px;
+    color:var(--laranja);
+    margin-bottom:60px;
 }
 
-.card h3 {
-    color: #ff6a00;
-    margin-bottom: 15px;
+/* ===== CARDS ===== */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
 }
 
-.card p {
-    line-height: 1.6;
-    font-size: 15px;
+.card{
+    background:var(--cinza);
+    padding:32px;
+    border-radius:14px;
+    border-top:4px solid var(--laranja);
+    transition:.3s;
 }
 
-.about {
-    background-color: #111;
-    border-radius: 10px;
-    padding: 40px;
+.card:hover{
+    transform:translateY(-6px);
 }
 
-footer {
-    background-color: #000;
-    padding: 40px 20px;
-    text-align: center;
-    font-size: 14px;
+.card h3{
+    color:var(--laranja);
+    margin-bottom:14px;
 }
 
-footer p {
-    margin: 8px 0;
+.card p{
+    font-size:15px;
 }
 
-footer strong {
-    color: #ff6a00;
+/* ===== SOBRE ===== */
+.about{
+    background:#111;
+    padding:45px;
+    border-radius:16px;
+    font-size:16px;
+}
+
+/* ===== DIFERENCIAIS ===== */
+.list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.list div{
+    background:#141414;
+    padding:25px;
+    border-left:4px solid var(--laranja);
+    border-radius:10px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:#000;
+    padding:50px 20px;
+    text-align:center;
+    font-size:14px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+footer strong{
+    color:var(--laranja);
 }
 </style>
 </head>
@@ -113,87 +166,81 @@ footer strong {
 <body>
 
 <header>
-    <img src="assets/logo-montec.png" alt="Logo MonTec Tecnologia">
+    <div class="logo-box">
+        <img src="assets/logo-montec.png" alt="Logo MonTec Tecnologia">
+    </div>
+
     <h1>MONTEC TECNOLOGIA</h1>
+
     <p>
-        A MonTec Tecnologia é uma empresa especializada em soluções técnicas no segmento de eletrônica,
-        montagem, manutenção e instalação de equipamentos tecnológicos, atuando com foco empresarial,
-        confiabilidade operacional, organização de processos e excelência técnica.
+        Soluções técnicas em eletrônica, montagem, instalação e manutenção de equipamentos tecnológicos.
+        Atuamos com foco empresarial, qualidade operacional e confiabilidade.
     </p>
+
     <a class="btn" href="https://wa.me/5541995579044" target="_blank">
         Atendimento via WhatsApp
     </a>
 </header>
 
 <section>
-    <h2>Especialização Técnica</h2>
+    <h2>Especializações Técnicas</h2>
 
     <div class="cards">
         <div class="card">
             <h3>Manutenção Eletrônica</h3>
-            <p>
-                Diagnóstico técnico avançado, manutenção preventiva e corretiva de placas eletrônicas,
-                módulos industriais e equipamentos tecnológicos, garantindo segurança, desempenho
-                e maior vida útil dos sistemas.
-            </p>
+            <p>Diagnóstico técnico, manutenção corretiva e preventiva de placas eletrônicas e equipamentos, garantindo desempenho e durabilidade.</p>
         </div>
 
         <div class="card">
             <h3>Montagem de Equipamentos</h3>
-            <p>
-                Montagem completa de equipamentos eletrônicos, integração de componentes,
-                testes funcionais e validação técnica conforme padrões de qualidade e confiabilidade.
-            </p>
+            <p>Montagem completa de equipamentos eletrônicos com testes funcionais e validação técnica conforme padrões profissionais.</p>
         </div>
 
         <div class="card">
             <h3>Instalações Técnicas</h3>
-            <p>
-                Instalação profissional de sistemas eletrônicos, equipamentos tecnológicos e soluções
-                personalizadas, com foco em segurança, organização e eficiência operacional.
-            </p>
+            <p>Instalação organizada e segura de sistemas eletrônicos e equipamentos tecnológicos para ambientes empresariais.</p>
         </div>
 
         <div class="card">
             <h3>Atualização e Retrofit</h3>
-            <p>
-                Atualização tecnológica de equipamentos, substituição de componentes obsoletos
-                e modernização de sistemas, aumentando produtividade e reduzindo custos operacionais.
-            </p>
+            <p>Modernização de equipamentos e sistemas, substituição de componentes e aumento de eficiência operacional.</p>
         </div>
 
         <div class="card">
             <h3>Suporte Técnico Empresarial</h3>
-            <p>
-                Atendimento técnico especializado para empresas, com suporte contínuo,
-                manutenção programada e soluções rápidas para ambientes corporativos e industriais.
-            </p>
+            <p>Atendimento técnico especializado, manutenção programada e soluções rápidas para empresas.</p>
         </div>
 
         <div class="card">
             <h3>Qualidade e Confiabilidade</h3>
-            <p>
-                Processos técnicos padronizados, foco em qualidade, testes rigorosos
-                e compromisso com a entrega de soluções confiáveis e duradouras.
-            </p>
+            <p>Processos padronizados, testes rigorosos e compromisso com excelência técnica em cada serviço.</p>
         </div>
     </div>
 </section>
 
 <section>
     <h2>Sobre a MonTec</h2>
-
     <div class="about">
         <p>
-            A MonTec Tecnologia atua com responsabilidade técnica e visão empresarial,
-            oferecendo soluções em eletrônica e tecnologia para empresas que buscam
-            confiabilidade, organização e alto padrão técnico.
+            A MonTec Tecnologia é uma empresa focada em soluções técnicas no segmento de eletrônica,
+            atuando com responsabilidade, organização e visão empresarial.
         </p>
         <p>
-            Nosso compromisso é entregar serviços bem executados, com transparência,
-            comunicação clara e foco na satisfação do cliente, respeitando normas técnicas
-            e boas práticas do mercado.
+            Nosso objetivo é entregar serviços de alto padrão, com transparência, comunicação clara
+            e compromisso com a satisfação do cliente.
         </p>
+    </div>
+</section>
+
+<section>
+    <h2>Diferenciais MonTec</h2>
+    <div class="list">
+        <div>✔ Atendimento profissional e responsável</div>
+        <div>✔ Foco em empresas e soluções técnicas</div>
+        <div>✔ Organização de processos</div>
+        <div>✔ Compromisso com qualidade</div>
+        <div>✔ Comunicação clara</div>
+        <div>✔ Base sólida para crescimento</div>
     </div>
 </section>
 
