@@ -4,13 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MonTec Tecnologias | Soluções em Tecnologia</title>
+<title>MonTec Tecnologias | Soluções Profissionais em Tecnologia</title>
 
 <style>
 :root {
   --laranja: #ff7a00;
-  --escuro: #111;
-  --cinza: #f3f3f3;
+  --preto: #000000;
+  --cinza: #f2f2f2;
+  --texto: #222;
 }
 
 * {
@@ -22,44 +23,40 @@
 
 body {
   background: #ffffff;
-  color: #222;
+  color: var(--texto);
 }
 
 /* HERO */
 .hero {
   min-height: 100vh;
-  background: linear-gradient(180deg, #ffffff, #f5f5f5);
+  background: linear-gradient(180deg, #ffffff, #ededed);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 40px 20px;
-}
-
-/* LOGO CONTAINER */
-.logo-wrapper {
-  background: #ffffff;
-  padding: 50px;
-  border-radius: 28px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
-  margin-bottom: 40px;
+  padding: 60px 20px;
 }
 
 /* LOGO */
-.logo-wrapper img {
-  width: 420px;
-  max-width: 90%;
+.logo-wrapper {
   background: #000;
-  padding: 40px;
-  border-radius: 22px;
+  padding: 60px;
+  border-radius: 36px;
+  box-shadow: 0 40px 100px rgba(0,0,0,0.6);
+  margin-bottom: 45px;
+}
+
+.logo-wrapper img {
+  width: 480px;
+  max-width: 95%;
+  display: block;
 }
 
 /* TITULOS */
 .hero h1 {
-  font-size: 3em;
-  color: var(--escuro);
-  margin-bottom: 15px;
+  font-size: 3.2em;
+  margin-bottom: 20px;
 }
 
 .hero h1 span {
@@ -68,16 +65,17 @@ body {
 
 .hero p {
   font-size: 1.2em;
-  max-width: 800px;
-  margin-bottom: 30px;
+  max-width: 900px;
+  margin-bottom: 35px;
+  line-height: 1.6;
 }
 
 /* BOTÕES */
 .actions a {
   display: inline-block;
   margin: 10px;
-  padding: 16px 30px;
-  border-radius: 40px;
+  padding: 16px 36px;
+  border-radius: 50px;
   text-decoration: none;
   font-weight: bold;
   background: var(--laranja);
@@ -91,59 +89,70 @@ body {
 
 /* SEÇÕES */
 section {
-  padding: 80px 20px;
+  padding: 90px 20px;
   max-width: 1200px;
   margin: auto;
 }
 
 section h2 {
-  font-size: 2.4em;
+  font-size: 2.6em;
   color: var(--laranja);
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  gap: 35px;
 }
 
+/* BOX */
 .box {
   background: var(--cinza);
-  padding: 35px;
-  border-radius: 22px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  padding: 40px;
+  border-radius: 26px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
 .box h3 {
-  margin-bottom: 15px;
   color: var(--laranja);
+  margin-bottom: 18px;
+  font-size: 1.4em;
+}
+
+.box p {
+  line-height: 1.6;
 }
 
 /* CONTATO */
 .contato {
   background: #111;
   color: #fff;
-  border-radius: 30px;
+  border-radius: 36px;
+  padding: 80px 30px;
+  margin-top: 40px;
 }
 
 .contato p {
-  font-size: 1.1em;
-  margin: 12px 0;
+  font-size: 1.15em;
+  margin: 15px 0;
 }
 
 /* FOOTER */
 footer {
-  text-align: center;
-  padding: 30px;
   background: #000;
   color: #aaa;
+  text-align: center;
+  padding: 35px;
+  margin-top: 60px;
 }
 </style>
 </head>
 
 <body>
 
+<!-- HERO -->
 <div class="hero">
 
   <div class="logo-wrapper">
@@ -151,9 +160,11 @@ footer {
   </div>
 
   <h1><span>MonTec</span> Tecnologias</h1>
+
   <p>
-    Especialistas em montagem, manutenção, atualização e soluções profissionais
-    em equipamentos eletrônicos e tecnologia empresarial.
+    A MonTec Tecnologias é especializada em montagem completa de equipamentos,
+    manutenção técnica, atualização de placas eletrônicas e soluções profissionais
+    em tecnologia para empresas que exigem qualidade, organização e confiabilidade.
   </p>
 
   <div class="actions">
@@ -163,48 +174,75 @@ footer {
   </div>
 </div>
 
+<!-- SERVIÇOS -->
 <section id="servicos">
-  <h2>Serviços</h2>
+  <h2>Serviços Especializados</h2>
+
   <div class="grid">
     <div class="box">
       <h3>Montagem de Equipamentos</h3>
-      <p>Montagem completa de equipamentos eletrônicos, seguindo padrões técnicos, testes funcionais e organização profissional.</p>
+      <p>
+        Montagem completa de equipamentos eletrônicos e tecnológicos,
+        seguindo padrões técnicos, organização profissional e testes
+        funcionais para garantir desempenho e confiabilidade.
+      </p>
     </div>
 
     <div class="box">
       <h3>Manutenção Técnica</h3>
-      <p>Diagnóstico, manutenção preventiva e corretiva de placas e dispositivos tecnológicos.</p>
+      <p>
+        Diagnóstico, manutenção preventiva e corretiva em placas,
+        módulos e equipamentos eletrônicos, com foco em durabilidade
+        e redução de falhas.
+      </p>
     </div>
 
     <div class="box">
-      <h3>Atualização de Sistemas</h3>
-      <p>Atualização e melhoria de placas eletrônicas, sistemas e componentes para maior desempenho.</p>
+      <h3>Atualização e Upgrade</h3>
+      <p>
+        Atualização de sistemas, substituição de componentes e
+        melhorias técnicas para aumentar performance, estabilidade
+        e vida útil dos equipamentos.
+      </p>
     </div>
   </div>
 </section>
 
+<!-- EMPRESA -->
 <section id="empresa">
   <h2>Sobre a MonTec</h2>
+
   <div class="grid">
     <div class="box">
       <h3>Atuação Profissional</h3>
-      <p>Atuamos com foco em qualidade, organização, compromisso técnico e atendimento responsável a empresas.</p>
+      <p>
+        Empresa formalizada, com foco em processos técnicos bem definidos,
+        organização, documentação e atendimento responsável ao cliente.
+      </p>
     </div>
 
     <div class="box">
-      <h3>Processos e Qualidade</h3>
-      <p>Seguimos processos técnicos claros, documentação e controle de qualidade em cada serviço.</p>
+      <h3>Qualidade e Processos</h3>
+      <p>
+        Trabalhamos com controle de qualidade, padronização de montagem
+        e compromisso com prazos, garantindo confiança em cada entrega.
+      </p>
     </div>
 
     <div class="box">
       <h3>Confiança Empresarial</h3>
-      <p>Empresa formalizada, comprometida com prazos, ética e excelência profissional.</p>
+      <p>
+        Atendemos empresas que buscam parceiros técnicos confiáveis,
+        preparados para crescer junto com seus projetos e operações.
+      </p>
     </div>
   </div>
 </section>
 
+<!-- CONTATO -->
 <section id="contato" class="contato">
   <h2>Contato Oficial</h2>
+
   <p><strong>WhatsApp:</strong> (41) 99557-9044</p>
   <p><strong>Email:</strong> montectecnologias@gmail.com</p>
   <p><strong>CNPJ:</strong> 61.366.918/0001-34</p>
