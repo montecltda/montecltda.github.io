@@ -1,0 +1,98 @@
+/* ===== RESET BÁSICO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== VARIÁVEIS DE COR ===== */
+:root {
+  --laranja: #ff6a00;
+  --preto: #0b0b0b;
+  --cinza: #1a1a1a;
+  --branco: #ffffff;
+}
+
+/* ===== ESTILO GERAL ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--preto);
+  color: var(--branco);
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: var(--cinza);
+  padding: 20px 40px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav img {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--branco);
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--laranja);
+}
+
+/* ===== SEÇÕES ===== */
+section {
+  padding: 80px 40px;
+}
+
+h1, h2 {
+  color: var(--laranja);
+  margin-bottom: 20px;
+}
+
+p {
+  max-width: 800px;
+}
+
+/* ===== BOTÕES ===== */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: var(--laranja);
+  color: var(--preto);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: var(--cinza);
+  padding: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer a {
+  color: var(--laranja);
+  text-decoration: none;
+  margin: 0 10px;
+}
