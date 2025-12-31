@@ -19,8 +19,8 @@ body {
 .menu a {
   color: #ffffff;
   margin: 0 15px;
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .menu a:hover {
@@ -37,18 +37,20 @@ body {
 
 /* CONTEÚDO */
 .conteudo {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 40px auto;
   background-color: #ffffff;
-  padding: 30px;
-  border-radius: 8px;
+  padding: 40px;
+  border-radius: 10px;
 }
 
-/* LOGO */
+/* IMAGEM INSTITUCIONAL / LOGO */
 .logo {
   display: block;
-  max-width: 220px;
-  margin: 0 auto 30px auto;
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto 40px auto;
+  border-radius: 8px;
 }
 
 /* TEXTOS */
@@ -56,26 +58,18 @@ h1, h2 {
   color: #0b3c5d;
 }
 
+h2 {
+  margin-top: 30px;
+}
+
+p {
+  margin-top: 15px;
+  line-height: 1.7;
+}
+
 ul {
+  margin-top: 15px;
   padding-left: 20px;
-}
-
-/* CONTATO */
-.contato p {
-  font-size: 16px;
-  margin: 10px 0;
-}
-
-/* BOTÃO WHATSAPP */
-.whatsapp {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 20px;
-  background-color: #25d366;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
 }
 
 /* RODAPÉ */
