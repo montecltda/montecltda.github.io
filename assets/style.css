@@ -1,15 +1,24 @@
+/* ----------------------------
+   RESET VISUAL
+----------------------------- */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
+/* ----------------------------
+   BODY
+----------------------------- */
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Arial', sans-serif;
   background-color: #f4f6f8;
   color: #333;
 }
 
-/* MENU */
+/* ----------------------------
+   MENU DE NAVEGAÇÃO
+----------------------------- */
 .menu {
   background-color: #0b3c5d;
   padding: 15px;
@@ -18,65 +27,101 @@ body {
 
 .menu a {
   color: #ffffff;
-  margin: 0 15px;
+  margin: 0 18px;
   font-weight: bold;
   text-decoration: none;
+  font-size: 16px;
 }
 
 .menu a:hover {
   text-decoration: underline;
 }
 
-/* TOPO */
+/* ----------------------------
+   CABEÇALHO PRINCIPAL
+----------------------------- */
 .topo {
   background-color: #1d6fa5;
   color: #ffffff;
-  padding: 40px 20px;
+  padding: 45px 20px;
   text-align: center;
 }
 
-/* CONTEÚDO */
-.conteudo {
-  max-width: 1100px;
-  margin: 40px auto;
-  background-color: #ffffff;
-  padding: 40px;
-  border-radius: 10px;
+.topo h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
 }
 
-/* IMAGEM INSTITUCIONAL / LOGO */
+.topo p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* ----------------------------
+   CONTEÚDO PRINCIPAL
+----------------------------- */
+.conteudo {
+  max-width: 1080px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0 4px 22px rgba(0,0,0,0.08);
+}
+
+/* ----------------------------
+   IMAGEM INSTITUCIONAL / LOGO
+----------------------------- */
 .logo {
   display: block;
-  max-width: 420px;
+  max-width: 280px;
   width: 100%;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* ----------------------------
+   BLOCOS DE TEXTO (VISUAL CORPORATIVO)
+----------------------------- */
+.bloco {
+  background-color: #f9fafb;
+  border-left: 6px solid #1d6fa5;
+  padding: 22px;
+  margin-bottom: 28px;
   border-radius: 8px;
 }
 
-/* TEXTOS */
-h1, h2 {
-  color: #0b3c5d;
+.bloco h2 {
+  margin-top: 0;
+  color: #1d6fa5;
+  font-size: 22px;
+  font-weight: bold;
 }
 
-h2 {
-  margin-top: 30px;
-}
-
+/* ----------------------------
+   PARÁGRAFOS
+----------------------------- */
 p {
-  margin-top: 15px;
-  line-height: 1.7;
+  margin-top: 14px;
+  line-height: 1.8;
+  color: #444;
 }
 
 ul {
-  margin-top: 15px;
-  padding-left: 20px;
+  margin-top: 14px;
+  padding-left: 22px;
+  color: #444;
 }
 
-/* RODAPÉ */
+/* ----------------------------
+   RODAPÉ
+----------------------------- */
 .rodape {
   background-color: #0b3c5d;
   color: #ffffff;
   text-align: center;
   padding: 15px;
   margin-top: 40px;
+  font-weight: bold;
 }
