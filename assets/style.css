@@ -21,8 +21,8 @@ ul {
 =========================== */
 header {
     background-color: #ffffff;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 header .container-header {
@@ -32,12 +32,12 @@ header .container-header {
 }
 
 header .logo {
-    width: 180px;
+    width: 150px;
 }
 
 header nav ul {
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
 header nav ul li a {
@@ -53,13 +53,49 @@ header nav ul li a:hover {
 /* ===========================
    BANNER
 =========================== */
+.banner {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 .banner img {
     width: 100%;
-    max-height: 300px;   /* Altura menor para não ocupar toda a tela */
+    max-height: 250px;   /* Ajustado para não ocupar a tela toda */
     object-fit: cover;
-    display: block;
-    margin: 0 auto;
     border-radius: 5px;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+.banner-text h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.btn-banner {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn-banner:hover {
+    background-color: #0056b3;
 }
 
 /* ===========================
@@ -71,9 +107,15 @@ header nav ul li a:hover {
 }
 
 .servicos h2 {
-    margin-bottom: 30px;
-    font-size: 28px;
+    margin-bottom: 15px;
+    font-size: 30px;
     color: #333;
+}
+
+.servicos p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #555;
 }
 
 .cards-servicos {
@@ -84,19 +126,19 @@ header nav ul li a:hover {
 }
 
 .card {
-    width: 280px;               /* Largura padronizada dos cards */
+    width: 260px;
     text-align: center;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s;
     background-color: #fff;
 }
 
 .card img {
     width: 100%;
-    max-height: 180px;           /* Altura menor dos cards */
+    max-height: 150px;   /* Altura menor para cards */
     object-fit: cover;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -108,12 +150,17 @@ header nav ul li a:hover {
     color: #333;
 }
 
+.card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
 .card a {
     display: inline-block;
-    margin-top: 10px;
-    color: #fff;
-    background-color: #007BFF;
     padding: 8px 15px;
+    background-color: #007BFF;
+    color: #fff;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
@@ -131,7 +178,7 @@ header nav ul li a:hover {
 =========================== */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 25px 20px;
     background-color: #f2f2f2;
     font-size: 14px;
 }
@@ -157,5 +204,13 @@ footer {
     header nav ul {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .banner-text h1 {
+        font-size: 24px;
+    }
+
+    .banner-text p {
+        font-size: 14px;
     }
 }
