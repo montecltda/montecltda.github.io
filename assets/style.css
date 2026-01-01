@@ -2,20 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background: #f4f6f8;
+    background: #f5f5f5;
     color: #333;
-    line-height: 1.6;
 }
 
-/* ================= TOPO ================= */
+/* TOPO */
 .topo {
     background: #0b2c3d;
     color: #fff;
-    padding: 18px 40px;
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,122 +22,99 @@ body {
 
 .topo h1 {
     font-size: 24px;
-    font-weight: 700;
 }
 
 .topo nav a {
     color: #fff;
-    margin-left: 25px;
+    margin-left: 20px;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: bold;
 }
 
-.topo nav a:hover {
-    text-decoration: underline;
-}
-
-/* ================= BANNER ================= */
+/* BANNER */
 .banner {
-    background: linear-gradient(
-        rgba(11,44,61,0.85),
-        rgba(11,44,61,0.85)
-    );
-    color: #fff;
-    padding: 70px 20px;
+    background: #e9ecef;
+    padding: 50px 20px;
     text-align: center;
 }
 
 .banner h2 {
-    font-size: 34px;
-    margin-bottom: 15px;
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
 .banner p {
-    font-size: 18px;
-    max-width: 750px;
+    font-size: 16px;
+    max-width: 700px;
     margin: auto;
 }
 
-/* ================= SERVIÇOS ================= */
+/* SERVIÇOS */
 .servicos {
-    padding: 70px 20px;
+    padding: 50px 20px;
     text-align: center;
 }
 
 .servicos h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    font-size: 26px;
 }
 
-.servicos p.subtitulo {
-    max-width: 700px;
-    margin: 0 auto 50px;
-    color: #555;
-}
-
-/* ================= GRID ================= */
+/* GRID */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 25px;
     max-width: 1100px;
     margin: auto;
 }
 
-/* ================= CARD ================= */
+/* CARD */
 .card {
     background: #fff;
     border-radius: 10px;
-    padding: 18px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .card img {
     width: 100%;
-    height: 120px;
+    height: 140px;
     object-fit: cover;
     border-radius: 6px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .card h3 {
     font-size: 18px;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .card p {
     font-size: 14px;
-    color: #555;
-    margin-bottom: 15px;
 }
 
-/* ================= BOTÃO ================= */
-.card a {
-    display: inline-block;
-    padding: 10px 18px;
-    background: #0b2c3d;
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-    border-radius: 5px;
+/* LINKS */
+a {
+    color: #0b2c3d;
 }
 
-.card a:hover {
-    background: #09425d;
+a:hover {
+    text-decoration: underline;
 }
 
-/* ================= RODAPÉ ================= */
+/* RODAPÉ */
 footer {
     background: #0b2c3d;
     color: #fff;
     text-align: center;
-    padding: 30px 20px;
-    margin-top: 60px;
+    padding: 25px;
+    margin-top: 50px;
     font-size: 14px;
 }
