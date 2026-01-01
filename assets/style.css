@@ -1,18 +1,12 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Corpo */
+/* RESET BÁSICO */
 body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f6f8;
-    color: #222;
+    color: #333;
 }
 
-/* Topo */
+/* TOPO */
 .topo {
     background-color: #0b2c4d;
     color: white;
@@ -20,45 +14,59 @@ body {
     padding: 40px 20px;
 }
 
-/* Logo */
+/* LOGO */
 .logo {
-    max-width: 180px;
+    max-width: 280px;
+    width: 100%;
     height: auto;
-    margin-bottom: 15px;
+    display: block;
+    margin: 0 auto 20px auto;
+    background-color: transparent;
 }
 
-/* Conteúdo */
-.conteudo {
+/* TÍTULO */
+.topo h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+/* SUBTÍTULO */
+.topo p {
+    margin-top: 8px;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* CONTEÚDO */
+main {
     max-width: 900px;
-    margin: 40px auto;
+    margin: 50px auto;
     padding: 0 20px;
 }
 
-.conteudo section {
-    background: white;
-    padding: 25px;
-    margin-bottom: 30px;
-    border-radius: 8px;
+section {
+    margin-bottom: 45px;
 }
 
-.conteudo h2 {
-    margin-bottom: 15px;
+h2 {
     color: #0b2c4d;
+    margin-bottom: 10px;
 }
 
-.conteudo ul {
-    margin-left: 20px;
+/* LISTA */
+ul {
+    padding-left: 20px;
 }
 
-.conteudo li {
+li {
     margin-bottom: 8px;
 }
 
-/* Rodapé */
-.rodape {
+/* RODAPÉ */
+footer {
     background-color: #0b2c4d;
     color: white;
     text-align: center;
-    padding: 15px;
-    font-size: 14px;
+    padding: 18px;
+    font-size: 0.9rem;
 }
