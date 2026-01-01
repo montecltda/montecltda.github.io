@@ -61,9 +61,9 @@ header nav ul li a:hover {
 
 .banner img {
     width: 100%;
-    max-height: 250px;   /* Ajustado para não ocupar a tela toda */
+    max-height: 180px;   /* Reduz banner */
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .banner-text {
@@ -138,7 +138,7 @@ header nav ul li a:hover {
 
 .card img {
     width: 100%;
-    max-height: 150px;   /* Altura menor para cards */
+    max-height: 140px;   /* Reduz altura dos cards */
     object-fit: cover;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -197,20 +197,3 @@ footer {
     }
 
     header .container-header {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .banner-text h1 {
-        font-size: 24px;
-    }
-
-    .banner-text p {
-        font-size: 14px;
-    }
-}
