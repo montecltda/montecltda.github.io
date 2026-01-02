@@ -117,4 +117,90 @@ footer {
     padding: 25px;
     margin-top: 50px;
     font-size: 14px;
+}/* HERO COM IMAGEM */
+.hero {
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.65);
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 700px;
+}
+
+/* DESTAQUES */
+.destaques {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.destaque {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.destaque img {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 10px;
+}
+
+.destaque-texto {
+    max-width: 500px;
+}
+
+.destaque-texto h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.destaque-texto p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.destaque-texto a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fca311;
+}
+
+/* FRASE IMPACTO */
+.frase-impacto {
+    background: #0d1b2a;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 26px;
+}
+
+/* CTA */
+.cta {
+    background: #f5f5f5;
+    text-align: center;
+    padding: 70px 20px;
+}
+
