@@ -7,8 +7,8 @@
 
 /* TOPO */
 .topo {
-    background: #0d1b2a;
-    height: 50px;
+    background-color: #0d1b2a;
+    height: 55px;
 }
 
 .topo-conteudo {
@@ -23,12 +23,12 @@
 
 /* LOGO PEQUENA */
 .logo {
-    height: 18px;
+    height: 20px;
 }
 
 /* MENU */
 .menu a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     margin-left: 20px;
     font-size: 14px;
@@ -36,12 +36,26 @@
 
 /* HERO */
 .hero {
-    background-image: url("/ativos/imagens/banner-tech.jpg");
+    background-image: url("imagens/banner-tech.jpg");
     background-size: cover;
     background-position: center;
-    padding: 80px 20px;
-    color: white;
+    padding: 100px 20px;
+    color: #ffffff;
     text-align: center;
+}
+
+.hero-texto {
+    max-width: 700px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 16px;
 }
 
 /* CARDS */
@@ -55,25 +69,51 @@
 
 .card {
     flex: 1;
-    background: #f2f2f2;
+    background-color: #f4f4f4;
     border-radius: 8px;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
 }
 
 .card img {
     width: 100%;
-    height: 180px;
+    height: 190px;
     object-fit: cover;
     border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* INSTITUCIONAL */
+.institucional {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.institucional h2 {
+    margin-bottom: 15px;
+}
+
+.institucional p {
+    font-size: 15px;
+    color: #444;
 }
 
 /* RODAPÉ */
 .rodape {
-    background: #0d1b2a;
-    color: white;
+    background-color: #0d1b2a;
+    color: #ffffff;
     text-align: center;
     padding: 20px;
     font-size: 13px;
