@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Teste de Imagens MonTec</title>
+</head>
+<body>
+  <h1>Galeria de Imagens MonTec</h1>
+
+  <img src="ativos/imagens/banner-tech.jpg" alt="Banner Tech" width="400">
+  <img src="ativos/imagens/manutencao-eletronica.jpg" alt="Manutenção Eletrônica" width="400">
+  <img src="ativos/imagens/montagem-equipamentos.jpg" alt="Montagem de Equipamentos" width="400">
+
+</body>
+</html>
