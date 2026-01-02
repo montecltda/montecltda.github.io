@@ -22,6 +22,7 @@
     .logo {
       max-width: 200px;
       height: auto;
+      margin-bottom: 10px;
     }
 
     .banner {
@@ -39,4 +40,54 @@
     }
 
     .imagens-container {
-      display:
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .imagens-container img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background-color: #0077cc;
+      color: white;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho com logo -->
+  <header>
+    <h1>Bem-vindo à MonTec</h1>
+  </header>
+
+  <!-- Banner principal -->
+  <section>
+    <img src="ativos/imagens/banner-tech.jpg" alt="Banner Tech" class="banner">
+  </section>
+
+  <!-- Galeria de imagens -->
+  <section id="galeria">
+    <h2>Galeria de Imagens</h2>
+    <div class="imagens-container">
+      <img src="ativos/imagens/banner-tech.jpg" alt="Banner Tech">
+      <img src="ativos/imagens/manutencao-eletronica.jpg" alt="Manutenção Eletrônica">
+      <img src="ativos/imagens/montagem-equipamentos.jpg" alt="Montagem de Equipamentos">
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    &copy; 2026 MonTec. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
