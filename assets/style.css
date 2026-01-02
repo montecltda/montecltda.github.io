@@ -7,8 +7,8 @@
 
 /* TOPO */
 .topo {
-    background-color: #0d1b2a;
-    height: 55px;
+    background: #0d1b2a;
+    height: 50px;
 }
 
 .topo-conteudo {
@@ -21,14 +21,14 @@
     padding: 0 20px;
 }
 
-/* LOGO PEQUENA (DEFINITIVO) */
+/* LOGO PEQUENA */
 .logo {
-    height: 20px;
+    height: 18px;
 }
 
 /* MENU */
 .menu a {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
     margin-left: 20px;
     font-size: 14px;
@@ -36,21 +36,12 @@
 
 /* HERO */
 .hero {
-    background-image: url("imagens/banner-tech.jpg");
+    background-image: url("/ativos/imagens/banner-tech.jpg");
     background-size: cover;
     background-position: center;
-    color: #ffffff;
+    padding: 80px 20px;
+    color: white;
     text-align: center;
-    padding: 90px 20px;
-}
-
-.hero h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 16px;
 }
 
 /* CARDS */
@@ -64,9 +55,9 @@
 
 .card {
     flex: 1;
-    background: #f4f4f4;
+    background: #f2f2f2;
     border-radius: 8px;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
 }
 
@@ -75,23 +66,14 @@
     height: 180px;
     object-fit: cover;
     border-radius: 6px;
-    margin-bottom: 15px;
-}
-
-.card h3 {
-    margin-bottom: 8px;
-    font-size: 18px;
-}
-
-.card p {
-    font-size: 14px;
-    color: #333;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
 }
 
 /* RODAPÉ */
 .rodape {
-    background-color: #0d1b2a;
-    color: #ffffff;
+    background: #0d1b2a;
+    color: white;
     text-align: center;
     padding: 20px;
     font-size: 13px;
