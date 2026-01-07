@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>MonTec | Soluções Industriais</title>
+    <title>MonTec | Montagem e Manutenção Industrial</title>
 
     <style>
         body {
@@ -10,14 +10,15 @@
             font-family: Arial, Helvetica, sans-serif;
             background-color: #f4f6f8;
             color: #333;
+            line-height: 1.7;
         }
 
         header {
             background-color: #0a3d62;
             padding: 15px 40px;
             display: flex;
-            align-items: center;
             justify-content: space-between;
+            align-items: center;
         }
 
         header img {
@@ -31,29 +32,61 @@
             font-weight: bold;
         }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
-
         .banner {
-            background: #dfe6e9;
-            padding: 60px 20px;
+            position: relative;
+        }
+
+        .banner img {
+            width: 100%;
+            max-height: 480px;
+            object-fit: cover;
+        }
+
+        .banner-texto {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(10, 61, 98, 0.75);
+            color: white;
+            padding: 30px 40px;
+            border-radius: 8px;
             text-align: center;
+            max-width: 700px;
         }
 
-        .banner h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
+        .banner-texto h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
         }
 
-        .banner p {
+        .banner-texto p {
             font-size: 18px;
         }
 
         .conteudo {
-            max-width: 1100px;
+            max-width: 1150px;
             margin: auto;
-            padding: 40px 20px;
+            padding: 60px 20px;
+        }
+
+        .box {
+            background: white;
+            padding: 35px;
+            margin-bottom: 40px;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .botoes a {
+            display: inline-block;
+            margin: 15px 10px 0 0;
+            padding: 12px 28px;
+            background: #0a3d62;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
         }
 
         footer {
@@ -70,41 +103,9 @@
 
 <header>
     <img src="logo-montec.png" alt="MonTec">
-
     <nav>
         <a href="index.html">Início</a>
         <a href="sobre.html">Sobre</a>
         <a href="serviços.html">Serviços</a>
         <a href="clientes.html">Clientes</a>
-        <a href="portfólio.html">Portfólio</a>
-        <a href="contato.html">Contato</a>
-    </nav>
-</header>
-
-<section class="banner">
-    <h1>MonTec</h1>
-    <p>Soluções em montagem, manutenção e tecnologia industrial</p>
-</section>
-
-<section class="conteudo">
-    <h2>Quem somos</h2>
-    <p>
-        A MonTec atua no setor industrial oferecendo soluções completas em montagem,
-        manutenção e tecnologia, com foco em segurança, qualidade e eficiência.
-    </p>
-
-    <h2>Nossos diferenciais</h2>
-    <ul>
-        <li>Equipe técnica especializada</li>
-        <li>Atendimento profissional</li>
-        <li>Compromisso com prazos</li>
-        <li>Qualidade e confiabilidade</li>
-    </ul>
-</section>
-
-<footer>
-    © 2026 MonTec — Todos os direitos reservados
-</footer>
-
-</body>
-</html>
+        <a href="portfólio.
