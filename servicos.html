@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <title>Serviços | MonTec</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         body {
@@ -11,60 +10,64 @@
             font-family: Arial, Helvetica, sans-serif;
             background-color: #f4f6f8;
             color: #333;
+            line-height: 1.8;
         }
 
         header {
-            background-color: #0b3c5d;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
+            background-color: #0a3d62;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        section {
-            max-width: 1100px;
-            margin: 40px auto;
-            padding: 0 20px;
+        header img {
+            height: 50px;
         }
 
-        .servico {
-            background: white;
-            padding: 30px;
-            margin-bottom: 25px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-
-        .servico h2 {
-            margin-top: 0;
-            color: #0b3c5d;
-        }
-
-        .servico p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
-
-        .btn {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 12px 20px;
-            background-color: #0b3c5d;
+        nav a {
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            margin-left: 20px;
             font-weight: bold;
         }
 
-        .btn:hover {
-            background-color: #092f48;
+        .conteudo {
+            max-width: 1150px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .box {
+            background: white;
+            padding: 35px;
+            margin-bottom: 35px;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .botao {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: #0a3d62;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
         }
 
         footer {
-            background: #222;
-            color: #aaa;
+            background: #0a3d62;
+            color: white;
             text-align: center;
             padding: 20px;
-            margin-top: 60px;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -72,48 +75,77 @@
 <body>
 
 <header>
-    <h1>SERVIÇOS MONTEC</h1>
-    <p>Montagem, Integração e Manutenção de Equipamentos de Tecnologia</p>
+    <img src="logo-montec.png" alt="MonTec">
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html">Contato</a>
+    </nav>
 </header>
 
-<section>
+<section class="conteudo">
+    <h1>Serviços MonTec</h1>
 
-    <div class="servico">
-        <h2>1. Montagem de Equipamentos de Tecnologia</h2>
-        <p>Montagem técnica completa de equipamentos tecnológicos, seguindo rigorosamente padrões, scripts e orientações das empresas empregadoras.</p>
-        <a class="btn" href="servico1.html">Saiba mais</a>
+    <div class="box">
+        <h2>Montagem Técnica de Equipamentos</h2>
+        <p>Montagem estrutural, elétrica e lógica de equipamentos tecnológicos.</p>
+        <a class="botao" href="servicos1.html">Saiba mais</a>
     </div>
 
-    <div class="servico">
-        <h2>2. Montagem de Totens de Pagamento</h2>
-        <p>Montagem estrutural e funcional de totens de pagamento e autoatendimento, com foco em qualidade, organização e confiabilidade.</p>
-        <a class="btn" href="servico2.html">Saiba mais</a>
+    <div class="box">
+        <h2>Totens de Pagamento e Autoatendimento</h2>
+        <p>Montagem completa de totens e sistemas inteligentes.</p>
+        <a class="botao" href="servicos2.html">Saiba mais</a>
     </div>
 
-    <div class="servico">
-        <h2>3. Sistemas de Micromarket</h2>
-        <p>Integração e montagem de sistemas de micromarket, garantindo operação contínua e segura.</p>
-        <a class="btn" href="servico3.html">Saiba mais</a>
+    <div class="box">
+        <h2>Sistemas de Micromarket</h2>
+        <p>Integração e organização de equipamentos de micromarket.</p>
+        <a class="botao" href="servicos3.html">Saiba mais</a>
     </div>
 
-    <div class="servico">
-        <h2>4. Equipamentos para Lavanderias Automatizadas</h2>
-        <p>Montagem de controladoras, interfaces e sistemas utilizados em lavanderias inteligentes.</p>
-        <a class="btn" href="servico4.html">Saiba mais</a>
+    <div class="box">
+        <h2>Lavanderias Automatizadas</h2>
+        <p>Montagem de controladoras e sistemas inteligentes.</p>
+        <a class="botao" href="servicos4.html">Saiba mais</a>
     </div>
 
-    <div class="servico">
-        <h2>5. Integracao de Modulos WiFi e Comunicacao</h2>
-        <p>Instalação e validação de módulos Wi-Fi e comunicação para operação remota dos equipamentos.</p>
-        <a class="btn" href="servico5.html">Saiba mais</a>
+    <div class="box">
+        <h2>Módulos Wi-Fi e Comunicação</h2>
+        <p>Instalação e testes de conectividade.</p>
+        <a class="botao" href="servicos5.html">Saiba mais</a>
     </div>
 
-    <div class="servico">
-        <h2>6. Interfaces e Controladoras</h2>
-        <p>Montagem e integração de interfaces, controladoras e módulos eletrônicos.</p>
-        <a class="btn" href="servico6.html">Saiba mais</a>
+    <div class="box">
+        <h2>Interfaces e Controladoras</h2>
+        <p>Integração de placas, HMI e módulos lógicos.</p>
+        <a class="botao" href="servicos6.html">Saiba mais</a>
     </div>
 
-    <div class="servico">
-        <h2>7. Travas de Acesso e Solenoides</h2>
-        <p>Sistemas eletromecânicos de segur
+    <div class="box">
+        <h2>Travas e Solenoides</h2>
+        <p>Sistemas eletromecânicos de segurança.</p>
+        <a class="botao" href="servicos7.html">Saiba mais</a>
+    </div>
+
+    <div class="box">
+        <h2>Baterias Inteligentes</h2>
+        <p>Instalação e validação de sistemas de energia.</p>
+        <a class="botao" href="servicos8.html">Saiba mais</a>
+    </div>
+
+    <div class="box">
+        <h2>Testes e Validação</h2>
+        <p>Testes completos e validação operacional.</p>
+        <a class="botao" href="servicos9.html">Saiba mais</a>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 MonTec — Serviços Técnicos em Tecnologia
+</footer>
+
+</body>
+</html>
