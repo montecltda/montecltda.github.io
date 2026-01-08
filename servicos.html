@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <title>Serviços | MonTec</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         body {
@@ -10,68 +11,59 @@
             font-family: Arial, Helvetica, sans-serif;
             background-color: #f4f6f8;
             color: #333;
-            line-height: 1.9;
         }
 
         header {
-            background-color: #0a3d62;
-            padding: 15px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            background-color: #0b3c5d;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
         }
 
-        header img {
-            height: 50px;
+        section {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
 
-        nav a {
+        .servico {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .servico h2 {
+            margin-top: 0;
+            color: #0b3c5d;
+        }
+
+        .servico p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 20px;
+            background-color: #0b3c5d;
             color: white;
             text-decoration: none;
-            margin-left: 20px;
+            border-radius: 5px;
             font-weight: bold;
         }
 
-        .conteudo {
-            max-width: 1150px;
-            margin: auto;
-            padding: 60px 20px;
-        }
-
-        h1 {
-            font-size: 38px;
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            color: #0a3d62;
-            margin-top: 50px;
-        }
-
-        .intro {
-            font-size: 18px;
-            margin-bottom: 50px;
-        }
-
-        .box {
-            background: white;
-            padding: 45px;
-            margin-bottom: 45px;
-            border-radius: 6px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-
-        ul {
-            margin-top: 15px;
-            padding-left: 20px;
+        .btn:hover {
+            background-color: #092f48;
         }
 
         footer {
-            background: #0a3d62;
-            color: white;
+            background: #222;
+            color: #aaa;
             text-align: center;
             padding: 20px;
-            font-size: 14px;
             margin-top: 60px;
         }
     </style>
@@ -80,23 +72,48 @@
 <body>
 
 <header>
-    <img src="logo-montec.png" alt="MonTec">
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="servicos.html">Serviços</a>
-        <a href="clientes.html">Clientes</a>
-        <a href="portfolio.html">Portfólio</a>
-        <a href="contato.html">Contato</a>
-    </nav>
+    <h1>SERVIÇOS MONTEC</h1>
+    <p>Montagem, Integração e Manutenção de Equipamentos de Tecnologia</p>
 </header>
 
-<section class="conteudo">
+<section>
 
-    <h1>Serviços MonTec</h1>
+    <div class="servico">
+        <h2>1. Montagem de Equipamentos de Tecnologia</h2>
+        <p>Montagem técnica completa de equipamentos tecnológicos, seguindo rigorosamente padrões, scripts e orientações das empresas empregadoras.</p>
+        <a class="btn" href="servico1.html">Saiba mais</a>
+    </div>
 
-    <p class="intro">
-        A MonTec é especializada em montagem técnica, integração, testes e
-        manutenção de equipamentos de tecnologia, atuando em ambientes
-        industriais, corporativos e de automação comercial. Nosso foco está na
-        execução
+    <div class="servico">
+        <h2>2. Montagem de Totens de Pagamento</h2>
+        <p>Montagem estrutural e funcional de totens de pagamento e autoatendimento, com foco em qualidade, organização e confiabilidade.</p>
+        <a class="btn" href="servico2.html">Saiba mais</a>
+    </div>
+
+    <div class="servico">
+        <h2>3. Sistemas de Micromarket</h2>
+        <p>Integração e montagem de sistemas de micromarket, garantindo operação contínua e segura.</p>
+        <a class="btn" href="servico3.html">Saiba mais</a>
+    </div>
+
+    <div class="servico">
+        <h2>4. Equipamentos para Lavanderias Automatizadas</h2>
+        <p>Montagem de controladoras, interfaces e sistemas utilizados em lavanderias inteligentes.</p>
+        <a class="btn" href="servico4.html">Saiba mais</a>
+    </div>
+
+    <div class="servico">
+        <h2>5. Integracao de Modulos WiFi e Comunicacao</h2>
+        <p>Instalação e validação de módulos Wi-Fi e comunicação para operação remota dos equipamentos.</p>
+        <a class="btn" href="servico5.html">Saiba mais</a>
+    </div>
+
+    <div class="servico">
+        <h2>6. Interfaces e Controladoras</h2>
+        <p>Montagem e integração de interfaces, controladoras e módulos eletrônicos.</p>
+        <a class="btn" href="servico6.html">Saiba mais</a>
+    </div>
+
+    <div class="servico">
+        <h2>7. Travas de Acesso e Solenoides</h2>
+        <p>Sistemas eletromecânicos de segur
