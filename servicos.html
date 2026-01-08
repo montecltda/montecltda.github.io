@@ -1,150 +1,151 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Serviços | MonTec</title>
+<meta charset="UTF-8">
+<title>Serviços | MonTec</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f4f6f8;
-            color: #333;
-            line-height: 1.8;
-        }
-
-        header {
-            background-color: #0a3d62;
-            padding: 15px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header img {
-            height: 50px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-            font-weight: bold;
-        }
-
-        .conteudo {
-            max-width: 1150px;
-            margin: auto;
-            padding: 50px 20px;
-        }
-
-        h1 {
-            font-size: 36px;
-            margin-bottom: 30px;
-        }
-
-        .box {
-            background: white;
-            padding: 35px;
-            margin-bottom: 35px;
-            border-radius: 6px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-
-        .botao {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 12px 25px;
-            background: #0a3d62;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-        }
-
-        footer {
-            background: #0a3d62;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-        }
-    </style>
+<style>
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f6f8;
+    color:#222;
+}
+header{
+    background:#0a3d62;
+    color:#fff;
+    padding:70px 20px;
+    text-align:center;
+}
+header h1{
+    font-size:40px;
+    margin-bottom:15px;
+}
+header p{
+    font-size:20px;
+    max-width:900px;
+    margin:auto;
+}
+main{
+    max-width:1100px;
+    margin:auto;
+    padding:70px 20px;
+}
+.servicos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+.card{
+    background:#fff;
+    padding:35px 30px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.card h2{
+    color:#0a3d62;
+    font-size:24px;
+    margin-bottom:15px;
+}
+.card p{
+    font-size:18px;
+    line-height:1.6;
+}
+.card a{
+    margin-top:25px;
+    align-self:flex-start;
+    text-decoration:none;
+    background:#0a3d62;
+    color:#fff;
+    padding:12px 22px;
+    font-weight:bold;
+    border-radius:6px;
+}
+footer{
+    background:#0a3d62;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+    font-size:14px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <img src="logo-montec.png" alt="MonTec">
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="servicos.html">Serviços</a>
-        <a href="contato.html">Contato</a>
-    </nav>
+<h1>Nossos Serviços</h1>
+<p>Soluções técnicas em montagem, integração e validação de equipamentos industriais e tecnológicos.</p>
 </header>
 
-<section class="conteudo">
-    <h1>Serviços MonTec</h1>
+<main>
 
-    <div class="box">
-        <h2>Montagem Técnica de Equipamentos</h2>
-        <p>Montagem estrutural, elétrica e lógica de equipamentos tecnológicos.</p>
-        <a class="botao" href="servicos1.html">Saiba mais</a>
-    </div>
+<div class="servicos">
 
-    <div class="box">
-        <h2>Totens de Pagamento e Autoatendimento</h2>
-        <p>Montagem completa de totens e sistemas inteligentes.</p>
-        <a class="botao" href="servicos2.html">Saiba mais</a>
-    </div>
+<div class="card">
+<h2>⚙️ Montagem de Equipamentos</h2>
+<p>Montagem técnica e estrutural de equipamentos industriais e tecnológicos.</p>
+<a href="servicos1.html">Ver serviço</a>
+</div>
 
-    <div class="box">
-        <h2>Sistemas de Micromarket</h2>
-        <p>Integração e organização de equipamentos de micromarket.</p>
-        <a class="botao" href="servicos3.html">Saiba mais</a>
-    </div>
+<div class="card">
+<h2>🔌 Montagem Elétrica</h2>
+<p>Instalações elétricas organizadas, seguras e padronizadas.</p>
+<a href="servicos2.html">Ver serviço</a>
+</div>
 
-    <div class="box">
-        <h2>Lavanderias Automatizadas</h2>
-        <p>Montagem de controladoras e sistemas inteligentes.</p>
-        <a class="botao" href="servicos4.html">Saiba mais</a>
-    </div>
+<div class="card">
+<h2>🧩 Integração de Sistemas</h2>
+<p>Integração de módulos, placas e sistemas eletrônicos.</p>
+<a href="servicos3.html">Ver serviço</a>
+</div>
 
-    <div class="box">
-        <h2>Módulos Wi-Fi e Comunicação</h2>
-        <p>Instalação e testes de conectividade.</p>
-        <a class="botao" href="servicos5.html">Saiba mais</a>
-    </div>
+<div class="card">
+<h2>🧪 Testes e Validação</h2>
+<p>Testes funcionais completos antes da liberação final.</p>
+<a href="servicos4.html">Ver serviço</a>
+</div>
 
-    <div class="box">
-        <h2>Interfaces e Controladoras</h2>
-        <p>Integração de placas, HMI e módulos lógicos.</p>
-        <a class="botao" href="servicos6.html">Saiba mais</a>
-    </div>
+<div class="card">
+<h2>🧺 Lavanderias Automatizadas</h2>
+<p>Montagem e preparação técnica de equipamentos para lavanderias.</p>
+<a href="servicos5.html">Ver serviço</a>
+</div>
 
-    <div class="box">
-        <h2>Travas e Solenoides</h2>
-        <p>Sistemas eletromecânicos de segurança.</p>
-        <a class="botao" href="servicos7.html">Saiba mais</a>
-    </div>
+<div class="card">
+<h2>📡 Comunicação e Wi-Fi</h2>
+<p>Integração de módulos de comunicação e conectividade.</p>
+<a href="servicos6.html">Ver serviço</a>
+</div>
 
-    <div class="box">
-        <h2>Baterias Inteligentes</h2>
-        <p>Instalação e validação de sistemas de energia.</p>
-        <a class="botao" href="servicos8.html">Saiba mais</a>
-    </div>
+<div class="card">
+<h2>🧠 Controladoras e Interfaces</h2>
+<p>Montagem e configuração de interfaces e controladoras.</p>
+<a href="servicos7.html">Ver serviço</a>
+</div>
 
-    <div class="box">
-        <h2>Testes e Validação</h2>
-        <p>Testes completos e validação operacional.</p>
-        <a class="botao" href="servicos9.html">Saiba mais</a>
-    </div>
+<div class="card">
+<h2>🔐 Travas e Segurança</h2>
+<p>Sistemas eletromecânicos de controle e segurança.</p>
+<a href="servicos8.html">Ver serviço</a>
+</div>
 
-</section>
+<div class="card">
+<h2>🔋 Energia e Baterias</h2>
+<p>Instalação e testes de sistemas de energia e baterias.</p>
+<a href="servicos9.html">Ver serviço</a>
+</div>
+
+</div>
+
+</main>
 
 <footer>
-    © 2026 MonTec — Serviços Técnicos em Tecnologia
+© MonTec — Tecnologia, Qualidade e Compromisso com Prazo
 </footer>
 
 </body>
